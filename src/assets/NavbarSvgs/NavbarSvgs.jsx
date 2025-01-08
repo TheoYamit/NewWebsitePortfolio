@@ -1,5 +1,21 @@
-export function ProjectSvg({ width = 50, height = 50, isActiveItem }) {
+export function HomeSvg({ width = 50, height = 50, isActiveItem }) {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      className="text-gray-700"
+    >
+      <path d="M5 12L12 5L19 12V19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V12Z" />
+      <rect x="10" y="14" width="4" height="6" />
+    </svg>
+  )
+};
 
+export function ProjectSvg({ width = 50, height = 50, isActiveItem }) {
   return (
     <svg
       width={width}
@@ -19,21 +35,21 @@ export function ProjectSvg({ width = 50, height = 50, isActiveItem }) {
 
 export function ProgressSvg({ width = 50, height = 50, isActiveItem }) {
   return (
-    <svg 
-          width={width}
-          height={height}
-          viewBox="0 0 24 24" 
-          fill={`${isActiveItem == "progress" ? "#DDFFBC" : "none"}`}
-          stroke={`${isActiveItem == "progress" ? "#91C788" : "currentColor"}`}
-          strokeWidth="2"
-          className="text-gray-700"
-        >
-          <rect x="4" y="4" width="16" height="16" rx="1" />
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill={`${isActiveItem == "progress" ? "#DDFFBC" : "none"}`}
+      stroke={`${isActiveItem == "progress" ? "#91C788" : "currentColor"}`}
+      strokeWidth="2"
+      className="text-gray-700"
+    >
+      <rect x="4" y="4" width="16" height="16" rx="1" />
 
-          <line x1="8" y1="16" x2="8" y2="12" />
-          <line x1="12" y1="16" x2="12" y2="8" />
-          <line x1="16" y1="16" x2="16" y2="6" />
-        </svg>
+      <line x1="8" y1="16" x2="8" y2="12" />
+      <line x1="12" y1="16" x2="12" y2="8" />
+      <line x1="16" y1="16" x2="16" y2="6" />
+    </svg>
   )
 };
 
