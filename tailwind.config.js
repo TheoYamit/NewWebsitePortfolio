@@ -12,6 +12,11 @@ export default {
                 'contact-orange': '#FF9D23'
             }
         },
+        fontFamily: {
+            'sans': ['proximaReg', 'system-ui', '-apple-system', 'sans-serif'],
+            'proximaReg': ['proximaReg', 'sans-serif'],
+            'proximaBold': ['proximaBold', 'sans-serif']
+        }
     },
     plugins: [],
 }

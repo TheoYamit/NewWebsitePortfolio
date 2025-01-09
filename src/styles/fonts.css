@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "proximaReg";
+    src: url('/fonts/Proxima Nova Reg.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "proximaBold";
+    src: url('/fonts/Proxima Nova Bold.ttf') format('truetype');
+    font-display: swap;
+}
