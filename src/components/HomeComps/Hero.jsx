@@ -2,7 +2,7 @@ import HeroPic from '../../assets/Pics/HeroPic.jpeg'
 export function HeroHome() {
   return (
     <>
-      <div className="flex sm:flex-col sm:justify-center sm:items-center md:flex-row p-10">
+      <div className="flex sm:flex-col sm:gap-5 sm:justify-center sm:items-center md:flex-row p-10">
         <div className="flex flex-col gap-10 md:w-1/2 justify-center"> 
           <div className="flex flex-col justify-center sm:text-center md:text-left">
             <div className="text-6xl">My name is</div>

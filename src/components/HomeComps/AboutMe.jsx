@@ -40,10 +40,10 @@ export function AboutMe() {
 
     return (
       <>
-        <div className="sm:w-full md:w-3/4 bg-black rounded-lg p-5 sm:h-44 md:h-32">
-          <div className="text-white">
-            <span>python &gt; </span>
-            <span className="text-green-500">{text}</span>
+        <div className="sm:w-full bg-black rounded-lg p-5 sm:h-44 md:h-44">
+          <div className="text-green-500">
+            <span>python &gt;&gt;&gt; </span>
+            <span className="text-white">{text}</span>
           </div>
         </div>
       </>
@@ -52,10 +52,23 @@ export function AboutMe() {
   };
   return (
     <>
-      <div className="flex flex-col gap-5 justify-center items-center p-10">
-        <div className="font-proximaBold text-5xl text-center" >About Me</div>
-        <div className="flex flex-col justify-center items-center w-full">
-          <AnimatedTerminal/>
+      <div className="sm:block md:hidden">
+        <div className="flex flex-col justify-center items-center p-10 gap-4">
+          <div className="font-proximaBold text-6xl text-center w-full">About Me</div>
+          <div className="flex flex-col justify-center items-center w-full">
+            <AnimatedTerminal/>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div className="sm:hidden md:block">
+        <div className="flex flex-row justify-center items-center p-10">
+          <div className="flex flex-col justify-center items-center w-1/2">
+            <AnimatedTerminal/>
+          </div>
+          <div className="font-proximaBold text-6xl text-center w-1/2">About Me</div>
         </div>
       </div>
     </>
