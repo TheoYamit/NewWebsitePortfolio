@@ -1,7 +1,6 @@
 import { HomeSvg, ProjectSvg, ProgressSvg, ContactSvg } from "../../assets/NavbarSvgs/NavbarSvgs"
 import { useNavigate } from "react-router";
 import { useState } from 'react';
-import profile from "../../assets/Pics/profile.jpg"
 
 export function Navbar() {
   const [isActiveItem, setIsActiveItem] = useState("home");

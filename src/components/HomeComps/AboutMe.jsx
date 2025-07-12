@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import { AppWindow } from 'lucide-react';
+import { TerminalControlSvg } from '../../assets/TerminalSvgs/TerminalSvgs';
 
 
 
@@ -40,7 +41,10 @@ export function AboutMe() {
 
     return (
       <>
-        <div className="sm:w-full bg-black rounded-lg p-5 sm:h-44 md:h-44">
+        <div className="flex flex-row w-full border p-1 rounded-tl-lg rounded-tr-lg bg-white">
+          <TerminalControlSvg/>
+        </div>
+        <div className="sm:w-full bg-black rounded-bl-lg rounded-br-lg p-5 sm:h-44 md:h-44">
           <div className="text-green-500">
             <span>python &gt;&gt;&gt; </span>
             <span className="text-white">{text}</span>
@@ -52,7 +56,7 @@ export function AboutMe() {
   };
   return (
     <>
-      <div className="sm:block md:hidden">
+      <div className="sm:block md:hidden mb-48 bg-gray-300 pb-28 pt-28">
         <div className="flex flex-col justify-center items-center p-10 gap-4">
           <div className="font-proximaBold text-6xl text-center w-full">About Me</div>
           <div className="flex flex-col justify-center items-center w-full">
@@ -63,7 +67,7 @@ export function AboutMe() {
 
       </div>
 
-      <div className="sm:hidden md:block">
+      <div className="sm:hidden md:block mb-48 bg-gray-300 pb-28 pt-28">
         <div className="flex flex-row justify-center items-center p-10">
           <div className="flex flex-col justify-center items-center w-1/2">
             <AnimatedTerminal/>
